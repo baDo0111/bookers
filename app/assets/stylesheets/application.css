@@ -13,68 +13,131 @@
  *= require_tree .
  *= require_self
  */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+html {
+	display: block;
+}
+head {
+	display: none;
 }
 
-main {
-	width: 100%;
-	margin: 3% 3%;
-	font-family: arial, Century Gothic, Dotum, Inpact
-	line-height: 10px;
+body {
+	font-family: verdana, arial, helvetica, sans-serif;
+	line-height: 18px;
+	font-size: 13px;
+	background-color: #fff;
+	margin: 33px;
 }
 
 .notice {
 	color: green;
 }
+
 h1 {
 	display: block;
-	padding: 2% 0;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
+
 table {
-	padding: 1%;
-	width: 50%;
+	width: 80%;
+	display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    border-color: grey;
 }
 
-table th {
-	padding-bottom: 2px;
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
 
-table td {
-	padding-left: 1%;
-	padding-bottom: 2%;
+th {
+	padding-bottom: 5px;
 }
-.form_field {
+
+td {
+	padding-left: 5px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+}
+
+a:visited {
+	color: #666;
+}
+
+h2 {
+	display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.field {
 	display: block;
 }
-.book_title {
+.title {
 	margin-bottom: 1%;
 }
 .book_body {
 	margin-bottom: 1%;
 }
 
-p {
-	margin: 1px;
+.alert_alert-warning {
+	width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
 }
 
+.alert_alert-warning h2 {
+	text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+    display: block;
+}
 
+ul {
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 
+.field_with_errors {
+	padding: 2px;
+    background-color: red;
+    display: table;
+}
 
+div.field, div.actions {
+	margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+p, ol, ul, td {
+	font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
 
 
 
